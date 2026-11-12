@@ -1,0 +1,6 @@
+{
+  "name": "Road Runner - Smart Ride Aggregator & Commute Hub",
+  "description": "Accessible, multi-language ride hailing aggregator comparing Grab, Gojek, Tada, Ryde, and Zig with accessible data visualization, tourist guides, news, and offline cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

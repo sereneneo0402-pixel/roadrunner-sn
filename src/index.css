@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* High contrast accessibility mode */
+.high-contrast {
+  --tw-border-opacity: 1 !important;
+  filter: contrast(1.15);
+}
+
+.high-contrast button, 
+.high-contrast input, 
+.high-contrast select {
+  outline-width: 2px !important;
+  font-weight: 600 !important;
+}
+
+/* Accessible focus ring for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* Pattern fills for colorblind accessibility */
+.pattern-stripes {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(0, 0, 0, 0.08) 6px, rgba(0, 0, 0, 0.08) 12px);
+}
+
+.pattern-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
